@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"task":"HTML","completed":false},{"task":"JS","completed":false}]
+=======
+[{"task":"CSS","completed":false},{"task":"JS","completed":false},{"task":"HTML","completed":false},{"task":"PHP","completed":false},{"task":"JSON","completed":false},{"task":"VUE","completed":false},{"task":"SCSS","completed":false}]
+>>>>>>> f2fdefe05e006ee77428d86a122d270d31222996

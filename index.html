@@ -29,13 +29,21 @@
             :class="{ completed: item.completed }"
             @click="toggleTask(index)"
           >
+<<<<<<< HEAD
             <span>{{ item.task }}
+=======
+            <span >{{ item.task }}
+>>>>>>> f2fdefe05e006ee77428d86a122d270d31222996
               <span v-if="item.completed" class="badge rounded-pill text-bg-success p-2">Complete!</span>
             </span>
             
             <button 
               class="btn btn-danger" 
+<<<<<<< HEAD
               @click.stop="removeTask(index)"
+=======
+              @click="removeTask(index)"
+>>>>>>> f2fdefe05e006ee77428d86a122d270d31222996
             >
               <i class="fa-solid fa-trash-can"></i>
             </button>
