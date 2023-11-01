@@ -23,19 +23,23 @@
 
       <div class="bg-white text-dark rounded-1 p-3">
         <ul class="list-group">
-          <li
-          class="list-group-item d-flex justify-content-between"
-          v-for="(item, index) in list"
-          :class="{ completed: item.completed }"
-          >
-            <span 
+          <li 
+            class="list-group-item d-flex justify-content-between" 
+            v-for="(item, index) in list"
+            :class="{ completed: item.completed }"
             @click="toggleTask(index)"
-            >
-              {{ item.task }}
+          >
+            <span>{{ item.task }}
+              <span v-if="item.completed" class="badge rounded-pill text-bg-success p-2">Complete!</span>
             </span>
-            <button class="btn btn-danger" @click="removeTask(index)">
+            
+            <button 
+              class="btn btn-danger" 
+              @click.stop="removeTask(index)"
+            >
               <i class="fa-solid fa-trash-can"></i>
             </button>
+            
           </li>
         </ul>
         <div class="input-group my-3">
